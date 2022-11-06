@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 16px;
+}
+
+.experience {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.timelineEntry {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 3fr;
+  gap: 48px;
+}
+
+.timelineLeft {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 1px;
+  background-color: red;
+}
+
+.timelineRight {
+}
+
+.experienceTitle {
+  font-weight: 700;
+}
