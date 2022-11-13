@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
     title: 'React Connect Four',
     description: 'Fun little connect four project combined with Github Pages.',
     technologies: ['React', 'HTML', 'CSS', 'Javascript'],
-    website: 'mattherwig.com/react-connect-four/'
+    website: 'https://mattherwig.com/react-connect-four/'
   },
   {
     title: 'Amazon Mturk Bot',
