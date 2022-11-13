@@ -146,13 +146,14 @@ interface Project {
 export const PROJECTS: Project[] = [
   {
     title: 'Personal Website v1',
-    description: 'My first personal website',
+    description: 'My first personal website.',
     technologies: ['HTML', 'CSS', 'Javascript'],
-    website: 'https://mattherwig.com'
+    website: 'https://mattherwig.github.io/personal-website-v1/'
   },
   {
     title: 'Amazon Mturk Bot',
-    description: '',
+    description:
+      'Made a desktop application which would allow someone to create and run automatic and manual tasks on Mturk. Examples; Scraped the mTurk application on a sentace-to-keyword task, hit the TagMe API, and pasted the solution into mTurk for a cent-per-task. Botted a task which required someone to place 50 dots in a perfect circle around an iris.',
     technologies: [
       'JavaFX',
       'Tess4j',
@@ -163,33 +164,27 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    title: 'FanFeed',
-    description: '',
-    technologies: ['Chrome Extension', 'Javascript', 'Firebase', 'Google Cloud Platform', 'Heroku']
-  },
-  {
-    title: 'YouTube Polls',
-    description: '',
-    technologies: ['Chrome Extension', 'Javascript', 'Youtube API']
-  },
-  {
-    title: 'Game Dev',
-    description: '',
-    technologies: ['Unity', 'C#', 'Python', 'Pygame', 'Blender']
-  },
-  {
     title: 'Poshmark Bot',
-    description: '',
+    description:
+      'Made a chrome extension and desktop application version -- both of which provided automated re-listing functionality to trick the closet promotion algorithm and share/like-others closest to gain followers.',
     technologies: ['JavaFX', 'Java', 'Scala', 'Selenium', 'Screen Builder']
   },
   {
+    title: 'Lehigh Voice Assistant',
+    description:
+      'Worked with a team of Lehigh Engineers to create a Google voice assistant responding to events happening on campus, cafeteria offerings, news and more through scraped data. Won 1st Place in almost all categories of the LUApps competition.',
+    technologies: ['Google Dialogflow', 'Node JS']
+  },
+  {
     title: 'Minecraft Server Custom Plugins',
-    description: 'Mini-games, Crate Keys',
+    description:
+      'Owned a couple minecraft servers and in some of my latest ones, developed internal plugins for mini-games, crate keys, and more.',
     technologies: ['Java', 'Bukkit API']
   },
   {
-    title: 'Lehigh Voice Assistant',
-    description: '1st Place LUApps',
-    technologies: ['Google Dialogflow', 'Node JS']
+    title: 'FanFeed',
+    description:
+      'Chrome extension which would allow social features when watching a streaming service.',
+    technologies: ['Chrome Extension', 'Javascript', 'Firebase', 'Google Cloud Platform', 'Heroku']
   }
 ];

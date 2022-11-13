@@ -40,7 +40,8 @@ const Project: React.FC<ProjectProps> = ({ title, description, technologies, web
           {website && <ExternalLinkIcon href={website} />}
         </div>
         <p>{description}</p>
-        <p>{technologies.join(', ')}</p>
+        <br />
+        <p>{`Key Technologies: ${technologies.join(', ')}`}</p>
       </div>
     </div>
   );
