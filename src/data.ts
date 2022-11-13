@@ -151,6 +151,12 @@ export const PROJECTS: Project[] = [
     website: 'https://mattherwig.github.io/personal-website-v1/'
   },
   {
+    title: 'React Connect Four',
+    description: 'Fun little connect four project.',
+    technologies: ['React', 'HTML', 'CSS', 'Javascript'],
+    website: 'mattherwig.com/react-connect-four/'
+  },
+  {
     title: 'Amazon Mturk Bot',
     description:
       'Made a desktop application which would allow someone to create and run automatic and manual tasks on Mturk. Examples; Scraped the mTurk application on a sentace-to-keyword task, hit the TagMe API, and pasted the solution into mTurk for a cent-per-task. Botted a task which required someone to place 50 dots in a perfect circle around an iris.',
