@@ -1,33 +1,17 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
+import React from "react";
+
 import classes from "./App.module.css";
-import classnames from "classnames";
-import Card from "./core/Card";
-import WorkExperiencesSection from "./components/WorkExperiencesSection";
+import AppFooter from "./components/AppFooter";
+import AppHeader from "./components/AppHeader";
+import AppMain from "./components/AppMain";
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme);
-  };
-
   return (
-    <div
-      className={classnames(classes.container, { [classes.dark]: isDarkTheme })}
-    >
+    <div className={classes.container}>
       <div className={classes.inner}>
-        <header>
-          Header
-          <button onClick={toggleTheme}>Toggle Theme</button>
-        </header>
-        <main>
-          <WorkExperiencesSection />
-          {/* <EducationSection />
-        <ProfessionalSkillsSection />
-        <PortfolioSection /> */}
-        </main>
-        <footer>Footer</footer>
+        <AppHeader />
+        <AppMain />
+        <AppFooter />
       </div>
     </div>
   );

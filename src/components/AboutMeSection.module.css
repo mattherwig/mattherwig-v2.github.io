@@ -1,0 +1,21 @@
+.innerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    font-size: x-large;
+}
+
+.picture {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(130%);
+}
+
+@media screen and (min-width: 600px) {
+    .innerContainer {
+        flex-direction: row;
+        gap: 32px;
+    }
+}

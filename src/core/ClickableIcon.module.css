@@ -1,0 +1,22 @@
+/*.container {*/
+/*    font-size: 30px;*/
+/*}*/
+
+/*.container a {*/
+/*    color: var(--secondary-color);*/
+/*    transition: color ease-in 1s;*/
+/*}*/
+
+/*.container a :hover {*/
+/*    color: var(--accent-color);*/
+/*    animation: rotateCircle 0.5s ease forwards;*/
+/*}*/
+
+/*@keyframes rotateCircle {*/
+/*    0% {*/
+/*        transform: rotate(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
