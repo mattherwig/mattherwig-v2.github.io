@@ -13,7 +13,7 @@ const AboutMeSection = () => {
           recent Lehigh University alum, bot enthusiast and need to get outside more. Programming is
           my passion and I try to become better every day.
         </p>
-        <img src="images/profile.jpg" className={classes.picture} alt="Matt Herwig profile" />
+        <img src="/images/profile.jpg" className={classes.picture} alt="Matt Herwig profile" />
       </ContentArea>
     </section>
   );

@@ -37,7 +37,7 @@
     gap: 8px;
     position: absolute;
     top: 0;
-    animation: fadeInPopLeftAnimation 0.8s ease 2s forwards;
+    animation: fadeInPopLeftAnimation 0.8s ease 3s forwards;
 }
 
 .rightSubContent {
@@ -47,7 +47,7 @@
     gap: 8px;
     position: absolute;
     top: 0;
-    animation: fadeInPopRightAnimation 0.8s ease 2s forwards;
+    animation: fadeInPopRightAnimation 0.8s ease 3s forwards;
 }
 
 .subtitle {

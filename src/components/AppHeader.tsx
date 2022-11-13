@@ -31,7 +31,7 @@ const AppHeader = () => {
             <a href="https://github.com/mattherwig" target="_blank" title="Github" rel="noreferrer">
               <FontAwesomeIcon icon={faGithubSquare} size="2xl" />
             </a>
-            <a href="media/resume.pdf" target="_blank" title="Resume">
+            <a href="/documents/resume.pdf" target="_blank" title="Resume">
               <FontAwesomeIcon icon={faSave} size="2xl" />
             </a>
           </div>

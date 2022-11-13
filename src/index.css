@@ -68,8 +68,7 @@ footer {
 
 @keyframes zoomInAnimation {
   0% {
-    /*background: var(--accent-color);*/
-    filter: blur(1rem) brightness(500%);
+    filter: blur(2rem) brightness(500%);
     position: absolute;
     top: 0;
     left: 0;
@@ -80,8 +79,7 @@ footer {
     filter: blur(0.5rem);
   }
   100% {
-    /*background: unset;*/
-    filter: blur(0);
+    filter: unset;
     position: absolute;
     top: 0;
     left: 0;
