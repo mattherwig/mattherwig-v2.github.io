@@ -1,9 +1,9 @@
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faSave, faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React from 'react';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faSave, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import classes from "./AppHeader.module.css";
+import classes from './AppHeader.module.css';
 
 const AppHeader = () => {
   return (

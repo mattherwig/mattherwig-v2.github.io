@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./AboutMeSection.module.css";
+import ContentArea from '../core/ContentArea';
 
-import ContentArea from "../core/ContentArea";
+import classes from './AboutMeSection.module.css';
 
 const AboutMeSection = () => {
   return (

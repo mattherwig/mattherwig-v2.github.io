@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import AboutMeSection from "./AboutMeSection";
-import classes from "./AppMain.module.css";
-import EducationSection from "./EducationSection";
-import ProjectSection from "./ProjectSection";
-import SkillsSection from "./SkillsSection";
-import WorkExperienceSection from "./WorkExperienceSection";
+import AboutMeSection from './AboutMeSection';
+import EducationSection from './EducationSection';
+import ProjectSection from './ProjectSection';
+import SkillsSection from './SkillsSection';
+import WorkExperienceSection from './WorkExperienceSection';
+
+import classes from './AppMain.module.css';
 
 const AppMain = () => {
   return (

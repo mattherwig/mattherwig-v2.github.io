@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./App.module.css";
-import AppFooter from "./components/AppFooter";
-import AppHeader from "./components/AppHeader";
-import AppMain from "./components/AppMain";
+import AppFooter from './components/AppFooter';
+import AppHeader from './components/AppHeader';
+import AppMain from './components/AppMain';
+
+import classes from './App.module.css';
 
 function App() {
   return (

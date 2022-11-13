@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./WorkExperienceSection.module.css";
+import ContentArea from '../core/ContentArea';
+import ExternalLinkIcon from '../core/ExternalLinkIcon';
+import Link from '../core/Link';
+import { WORK_EXPERIENCES } from '../data';
 
-import ContentArea from "../core/ContentArea";
-import ExternalLinkIcon from "../core/ExternalLinkIcon";
-import Link from "../core/Link";
-import { WORK_EXPERIENCES } from "../data";
+import classes from './WorkExperienceSection.module.css';
 
 const WorkExperienceSection = () => {
   return (
@@ -28,7 +28,7 @@ const WorkExperienceSection = () => {
                   <p>{location}</p>
                 </div>
                 {positions.map(({ title, date, bullets }) => (
-                  <div className={classes.position}>
+                  <div className={classes.position} key={title}>
                     <div>
                       <h4>{title}</h4>
                       <p>{date}</p>

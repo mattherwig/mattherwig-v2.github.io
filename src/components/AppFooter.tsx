@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import classes from "./AppFooter.module.css";
+import Link from '../core/Link';
 
-import Link from "../core/Link";
+import classes from './AppFooter.module.css';
 
 const AppFooter = () => {
   return (

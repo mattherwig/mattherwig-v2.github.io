@@ -7,41 +7,58 @@ module.exports = {
     node: true // Defines things like process.env when generating through node
   },
   extends: [
-    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jest/recommended',
     'plugin:prettier/recommended'
   ],
-  parser: 'babel-eslint', // Uses babel-eslint transforms.
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module' // Allows for the use of imports
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      presets: ['@babel/preset-typescript']
+    }
   },
-  plugins: [
-    'import' // eslint-plugin-import plugin. https://www.npmjs.com/package/eslint-plugin-import
-  ],
+  plugins: ['react', 'simple-import-sort', 'import', '@babel'],
   root: true, // For configuration cascading.
   rules: {
-    'import/order': [
-      'warn',
-      {
-        'newlines-between': 'always',
-        alphabetize: {
-          caseInsensitive: true,
-          order: 'asc'
-        },
-        groups: ['builtin', 'external', 'index', 'sibling', 'parent', 'internal']
-      }
-    ]
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'react/prop-types': ['off']
   },
   settings: {
     react: {
       version: 'detect' // Detect react version
     }
-  }
+  },
+  overrides: [
+    // override "simple-import-sort" config
+    {
+      files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
+      rules: {
+        'simple-import-sort/imports': [
+          'error',
+          {
+            groups: [
+              // Packages `react` related packages come first.
+              ['^react', '^@?\\w'],
+              // Internal packages.
+              ['^(@|components)(/.*|$)'],
+              // Side effect imports.
+              ['^\\u0000'],
+              // Parent imports. Put `..` last.
+              ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+              // Other relative imports. Put same-folder imports and `.` last.
+              ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+              // Style imports.
+              ['^.+\\.?(css)$']
+            ]
+          }
+        ]
+      }
+    }
+  ]
 };

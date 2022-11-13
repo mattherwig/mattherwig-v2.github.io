@@ -4,11 +4,6 @@
     gap: 16px;
 }
 
-.experience {
-    display: grid;
-    grid-auto-flow: row;
-}
-
 .timelineLeft {
     display: none;
 }
