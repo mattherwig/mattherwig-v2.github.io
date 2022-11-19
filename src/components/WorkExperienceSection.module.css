@@ -1,64 +1,64 @@
 .container {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 16px;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 16px;
 }
 
 .timelineLeft {
-    display: none;
+  display: none;
 }
 
 .timelineLeft img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .timelineRight {
-    display: grid;
-    gap: 16px;
+  display: grid;
+  gap: 16px;
 }
 
 .company {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .position {
-    display: grid;
-    gap: 8px;
-    position: relative;
+  display: grid;
+  gap: 8px;
+  position: relative;
 }
 
 @media screen and (min-width: 600px) {
-    .timelineEntry {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: min-content auto;
-        gap: 32px;
-        border-bottom: 0;
-    }
+  .timelineEntry {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content auto;
+    gap: 32px;
+    border-bottom: 0;
+  }
 
-    .timelineLeft {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
-        gap: 8px;
-        height: min-content;
-        font-size: small;
-        font-weight: bold;
-        color: var(--primary-color);
-    }
+  .timelineLeft {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 8px;
+    height: min-content;
+    font-size: small;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
 
-    .position::before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 8px;
-        top: 0;
-        left: -20px;
-        background: var(--secondary-color);
-        border-radius: 8px;
-    }
+  .position::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    top: 0;
+    left: -20px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "mattherwig.github.io",
   "version": "0.1.0",
-  "homepage": "https://mattherwig.github.io/mattherwig.github.io",
+  "homepage": "https://mattherwig.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -15,7 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.4.2",
+    "typescript": "*",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -45,12 +45,13 @@
     "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/eslint-plugin": "^7.19.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^27.1.5",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "gh-pages": "^4.0.0",

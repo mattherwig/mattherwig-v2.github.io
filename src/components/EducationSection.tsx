@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ContentArea from '../core/ContentArea';
 import ExternalLinkIcon from '../core/ExternalLinkIcon';
+import Link from '../core/Link';
 
 import classes from './EducationSection.module.css';
 
@@ -16,13 +17,13 @@ const EducationSection = () => {
             <div>
               <h3>Lehigh University</h3>
               <p>Bachelor of Science, Computer Science &amp; Business</p>
-              <p>2016 - 2020</p>
+              <p>2016 - 2020 &#8226; 3.91 GPA</p>
             </div>
             <p>
               The{' '}
-              <a href="https://csb.lehigh.edu/" target="_blank" rel="noreferrer">
+              <Link href="https://csb.lehigh.edu/" target="_blank" rel="noreferrer">
                 Computer Science &amp; Business program
-              </a>{' '}
+              </Link>{' '}
               is a Lehigh-unique ABET and AACSB accredited major which is a full CS degree and full
               business degree. In my major, I learn everything a CS student learns, everything a
               business student learns, and how to apply my CS skills in commercial environments.

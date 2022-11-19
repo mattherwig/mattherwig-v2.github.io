@@ -1,11 +1,9 @@
-
-
 .innerContainer {
-    display: grid;
-    gap: 16px;
+  display: grid;
+  gap: 16px;
 }
 
 .project .header {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }

@@ -3,6 +3,8 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSave, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Link from '../core/Link';
+
 import classes from './AppHeader.module.css';
 
 const AppHeader = () => {
@@ -15,25 +17,36 @@ const AppHeader = () => {
       <div className={classes.subContent}>
         <div className={classes.subInnerContent}>
           <div className={classes.leftSubContent}>
-            <a href="mailto:herwig.matt@gmail.com" target="_blank" title="Email" rel="noreferrer">
+            <Link
+              href="mailto:herwig.matt@gmail.com"
+              target="_blank"
+              title="Email"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faSquareEnvelope} size="2xl" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/mattherwig/"
               target="_blank"
               title="LinkedIn"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} size="2xl" />
-            </a>
+            </Link>
           </div>
           <span className={classes.subtitle}>Software Developer</span>
           <div className={classes.rightSubContent}>
-            <a href="https://github.com/mattherwig" target="_blank" title="Github" rel="noreferrer">
+            <Link
+              href="https://github.com/mattherwig"
+              target="_blank"
+              title="Github"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faGithubSquare} size="2xl" />
-            </a>
-            <a href="/documents/resume.pdf" target="_blank" title="Resume">
+            </Link>
+            <Link href="/documents/resume.pdf" target="_blank" title="Resume">
               <FontAwesomeIcon icon={faSave} size="2xl" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

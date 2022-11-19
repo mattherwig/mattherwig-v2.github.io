@@ -4,14 +4,14 @@ module.exports = {
     commonjs: true, // CommonJS global variables and CommonJS scoping.Allows require, exports and module.
     es6: true, // Enable all ECMAScript 6 features except for modules.
     jest: true, // Jest global variables like `it` etc.
-    node: true // Defines things like process.env when generating through node
+    node: true, // Defines things like process.env when generating through node
   },
   extends: [
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jest/recommended',
-    'plugin:prettier/recommended'
+    'prettier',
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -19,20 +19,22 @@ module.exports = {
     babelOptions: {
       babelrc: false,
       configFile: false,
-      presets: ['@babel/preset-typescript']
-    }
+      presets: ['@babel/preset-typescript'],
+    },
   },
-  plugins: ['react', 'simple-import-sort', 'import', '@babel'],
+  plugins: ['react', 'simple-import-sort', 'import', '@babel', 'prettier'],
   root: true, // For configuration cascading.
   rules: {
+    quotes: ['error', 'single', { avoidEscape: true }],
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    'react/prop-types': ['off']
+    'react/prop-types': ['off'],
+    'prettier/prettier': 'off',
   },
   settings: {
     react: {
-      version: 'detect' // Detect react version
-    }
+      version: 'detect', // Detect react version
+    },
   },
   overrides: [
     // override "simple-import-sort" config
@@ -54,11 +56,11 @@ module.exports = {
               // Other relative imports. Put same-folder imports and `.` last.
               ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
               // Style imports.
-              ['^.+\\.?(css)$']
-            ]
-          }
-        ]
-      }
-    }
-  ]
+              ['^.+\\.?(css)$'],
+            ],
+          },
+        ],
+      },
+    },
+  ],
 };

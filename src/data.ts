@@ -22,14 +22,14 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
       {
         title: 'Senior Full-Stack Engineer',
         date: 'July 2020 - Present',
-        bullets: []
+        bullets: [],
       },
       {
         title: 'Full-Stack Engineer',
         date: 'July 2021 - July 2020',
-        bullets: []
-      }
-    ]
+        bullets: [],
+      },
+    ],
   },
   {
     company: 'Trifecta',
@@ -43,10 +43,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         bullets: [
           'Migrated legacy APIs and UIs into the Lightning platform using native Salesforce languages to create an interconnected service CRM ecosystem.',
           'Constructed frontend permission-based user flows and component-based UI.',
-          'Made scalable and configurable Apex code with licensing and governing limits.'
-        ]
-      }
-    ]
+          'Made scalable and configurable Apex code with licensing and governing limits.',
+        ],
+      },
+    ],
   },
   {
     company: 'Dolomite',
@@ -60,18 +60,18 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         bullets: [
           'Created tiered account management system with numerous integrations and frameworks allowing for secure and dynamic use of the exchange.',
           'Developed Stripe payment method and subscription system enabling external companies to obtain proprietary blockchain and market data.',
-          'Built web socket software to allow for distributed communication and integration with frontend clients and external partners respectively.'
-        ]
+          'Built web socket software to allow for distributed communication and integration with frontend clients and external partners respectively.',
+        ],
       },
       {
         title: 'Backend Software Intern',
         date: 'Summer 2018',
         bullets: [
           'Developed in an agile environment and wrote thoroughly tested code that ensured the current and future reliability of provided features.',
-          'Designed the core Scala and Play! Framework backend infrastructure providing easy-to-use abstractions for other developers to use.'
-        ]
-      }
-    ]
+          'Designed the core Scala and Play! Framework backend infrastructure providing easy-to-use abstractions for other developers to use.',
+        ],
+      },
+    ],
   },
   {
     company: 'WonPlanet',
@@ -83,10 +83,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         date: 'Spring 2019, Fall 2019',
         bullets: [
           'Created JSON REST architecture; Focusing on minimizing code duplication, server costs and breaking changes from legacy HTML endpoints.',
-          'Developed rate limiting and session-based authentication to protect against costly and sensitive resource use respectively.'
-        ]
-      }
-    ]
+          'Developed rate limiting and session-based authentication to protect against costly and sensitive resource use respectively.',
+        ],
+      },
+    ],
   },
   {
     company: 'Teradata',
@@ -98,10 +98,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         date: 'June 2018',
         bullets: [
           'Designed the Prague’s division internal web application using SharePoint.',
-          'Modelled employees’ home and working locations globally with Power BI.'
-        ]
-      }
-    ]
+          'Modelled employees’ home and working locations globally with Power BI.',
+        ],
+      },
+    ],
   },
   {
     company: "Uncle Bill's Pancake House",
@@ -113,10 +113,10 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         date: 'Summer 2016, Summer 2017',
         bullets: [
           'Facilitated busboy arrangement and side work throughout the restaurant.',
-          'Assisted customers, employees, and managers in the preparation and cleaning of tables in a fast-paced environment.'
-        ]
-      }
-    ]
+          'Assisted customers, employees, and managers in the preparation and cleaning of tables in a fast-paced environment.',
+        ],
+      },
+    ],
   },
   {
     company: 'Minecraft Admin',
@@ -129,11 +129,11 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         bullets: [
           'Developed custom Java plugins to create unique user experiences ranging from mini-games to in-game reward key system.',
           'Managed two online game servers and online community website receiving over 500 dollars in profit per month.',
-          'Delegated responsibilities of advertising, marketing, website development, player management to over 25 staff.'
-        ]
-      }
-    ]
-  }
+          'Delegated responsibilities of advertising, marketing, website development, player management to over 25 staff.',
+        ],
+      },
+    ],
+  },
 ];
 
 interface Project {
@@ -148,13 +148,13 @@ export const PROJECTS: Project[] = [
     title: 'Personal Website v1',
     description: 'My first personal website.',
     technologies: ['HTML', 'CSS', 'Javascript'],
-    website: 'https://mattherwig.github.io/personal-website-v1/'
+    website: 'https://mattherwig.github.io/personal-website-v1/',
   },
   {
     title: 'React Connect Four',
     description: 'Fun little connect four project combined with Github Pages.',
     technologies: ['React', 'HTML', 'CSS', 'Javascript'],
-    website: 'https://mattherwig.com/react-connect-four/'
+    website: 'https://mattherwig.com/react-connect-four/',
   },
   {
     title: 'Amazon Mturk Bot',
@@ -166,31 +166,31 @@ export const PROJECTS: Project[] = [
       'Java',
       'Screen Builder',
       'Java Thread Queue System',
-      'TagMe API'
-    ]
+      'TagMe API',
+    ],
   },
   {
     title: 'Poshmark Bot',
     description:
       'Made a chrome extension and desktop application version -- both of which provided automated re-listing functionality to trick the closet promotion algorithm and share/like-others closest to gain followers.',
-    technologies: ['JavaFX', 'Java', 'Scala', 'Selenium', 'Screen Builder']
+    technologies: ['JavaFX', 'Java', 'Scala', 'Selenium', 'Screen Builder'],
   },
   {
     title: 'Lehigh Voice Assistant',
     description:
       'Worked with a team of Lehigh Engineers to create a Google voice assistant responding to events happening on campus, cafeteria offerings, news and more through scraped data. Won 1st Place in almost all categories of the LUApps competition.',
-    technologies: ['Google Dialogflow', 'Node JS']
+    technologies: ['Google Dialogflow', 'Node JS'],
   },
   {
     title: 'Minecraft Server Custom Plugins',
     description:
       'Owned a couple minecraft servers and in some of my latest ones, developed internal plugins for mini-games, crate keys, and more.',
-    technologies: ['Java', 'Bukkit API']
+    technologies: ['Java', 'Bukkit API'],
   },
   {
     title: 'FanFeed',
     description:
       'Chrome extension which would allow social features when watching a streaming service.',
-    technologies: ['Chrome Extension', 'Javascript', 'Firebase', 'Google Cloud Platform', 'Heroku']
-  }
+    technologies: ['Chrome Extension', 'Javascript', 'Firebase', 'Google Cloud Platform', 'Heroku'],
+  },
 ];
