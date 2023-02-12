@@ -20,13 +20,18 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
     icon: '/images/gusto-black.jpeg',
     positions: [
       {
+        title: 'Staff Full-Stack Engineer',
+        date: 'Jan. 2023 - Present',
+        bullets: [],
+      },
+      {
         title: 'Senior Full-Stack Engineer',
-        date: 'July 2020 - Present',
+        date: 'July 2022 - Dec. 2022',
         bullets: [],
       },
       {
         title: 'Full-Stack Engineer',
-        date: 'July 2021 - July 2020',
+        date: 'July 2021 - June 2022',
         bullets: [],
       },
     ],
