@@ -1,0 +1,15 @@
+.pill {
+    background: lightgray;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3b3b3b;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}

@@ -14,7 +14,7 @@ body {
 
   font-family: 'Montserrat', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 200;
-  animation: zoomInAnimation 3s ease;
+  animation: zoomInAnimation 2s ease;
 }
 
 h1 {

@@ -16,23 +16,33 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     company: 'Gusto',
     website: 'https://gusto.com',
-    location: 'San Francisco',
+    location: 'New York & San Francisco',
     icon: '/images/gusto-black.jpeg',
     positions: [
       {
         title: 'Staff Full-Stack Engineer',
         date: 'Jan. 2023 - Present',
-        bullets: [],
+        bullets: [
+          'Led TurboTax integration generating 200k+ in revenue yearly.',
+          'Developed and championed for the suite of growth frameworks (ex; scheduled modals) within the employee and mobile experiences. Supported rapid development for teams building into these shared experiences.'
+        ],
       },
       {
         title: 'Senior Full-Stack Engineer',
         date: 'July 2022 - Dec. 2022',
-        bullets: [],
+        bullets: [
+          'Developed a data driven insights engine, working x-functional and with internal stakeholders, supporting feature adoption (ex; budgeting ~750+% increase).',
+          'Regularly incorporated multiple tech initiatives, including modularity and performance, into my projects. Presented in performance and GraphQL guilds. Hosted Mind Meld, an engineering group within our segment.',
+          'Revamped and owned the most visited page on web, the employee dashboard.',
+        ],
       },
       {
         title: 'Full-Stack Engineer',
         date: 'July 2021 - June 2022',
-        bullets: [],
+        bullets: [
+          'Applied first-principals to migrate numerous features from web to mobile. Projects required becoming a SME, re-architecting for cross platform consumption, working in ambiguity and unowned parts of the codebase (ex; employee onboarding).',
+          'Developed demo-tooling to support employee creation in numerous lifecycle states; used over 2k+ times internally.',
+        ],
       },
     ],
   },
@@ -81,7 +91,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     company: 'WonPlanet',
     location: 'Remote',
-    icon: '/images/trifecta-black.jpeg',
+    icon: '/images/wonplanet-gray.jpg',
     positions: [
       {
         title: 'Mobile Backend Software Engineer',
@@ -96,7 +106,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     company: 'Teradata',
     location: 'Czech Republic, Prague',
-    icon: '/images/trifecta-black.jpeg',
+    icon: 'images/teradata-logo-gray.png',
     positions: [
       {
         title: 'Frontend Designer',
@@ -111,7 +121,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     company: "Uncle Bill's Pancake House",
     location: 'Ocean City, NJ',
-    icon: '/images/trifecta-black.jpeg',
+    icon: '/images/ubph-gray.png',
     positions: [
       {
         title: 'Busboy',
@@ -126,7 +136,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
   {
     company: 'Minecraft Admin',
     location: 'Remote',
-    icon: '/images/trifecta-black.jpeg',
+    icon: '/images/minecraft-gray.png',
     positions: [
       {
         title: 'Entrepreneurial Owner',
@@ -149,6 +159,12 @@ interface Project {
 }
 
 export const PROJECTS: Project[] = [
+  {
+    title: 'Juxe - Share Music With Friends!',
+    description: 'Cross platform mobile application for sharing and listening to friends music. Built with a Node JS backend and React Native frontend.',
+    technologies: ['Typescript', 'Node JS', 'GraphQL', 'React Native', 'Apple API', 'Spotify API', 'Pathos', 'Prisma', 'Expo', 'Firebase', 'GCP'],
+    website: 'https://juxefeed.com',
+  },
   {
     title: 'Personal Website v1',
     description: 'My first personal website.',
@@ -181,7 +197,7 @@ export const PROJECTS: Project[] = [
     technologies: ['JavaFX', 'Java', 'Scala', 'Selenium', 'Screen Builder'],
   },
   {
-    title: 'Lehigh Voice Assistant',
+    title: 'Hackathon 1st Place - Lehigh Voice Assistant',
     description:
       'Worked with a team of Lehigh Engineers to create a Google voice assistant responding to events happening on campus, cafeteria offerings, news and more through scraped data. Won 1st Place in almost all categories of the LUApps competition.',
     technologies: ['Google Dialogflow', 'Node JS'],

@@ -3,7 +3,8 @@ import { faAward, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ContentArea from '../core/ContentArea';
-import ExternalLinkIcon from '../core/ExternalLinkIcon';
+import Heading from '../core/Heading';
+import { ExternalLinkIcon } from '../core/Icon';
 import Link from '../core/Link';
 
 import classes from './EducationSection.module.css';
@@ -15,7 +16,7 @@ const EducationSection = () => {
         <div className={classes.universityContent}>
           <div className={classes.universityInnerContent}>
             <div>
-              <h3>Lehigh University</h3>
+              <Heading level={3}>Lehigh University</Heading>
               <p>Bachelor of Science, Computer Science &amp; Business</p>
               <p>2016 - 2020 &#8226; 3.91 GPA</p>
             </div>
@@ -31,7 +32,7 @@ const EducationSection = () => {
           </div>
           <div className={classes.universityInnerAdditionalContent}>
             <div>
-              <h3>Awards</h3>
+              <Heading level={3}>Awards</Heading>
               <Award
                 title="Graduated Highest Honors"
                 link="https://www.lehigh.edu/~inis/pdf/commencement/2020_Commencement_Honors_and_Awards.pdf"
@@ -42,7 +43,7 @@ const EducationSection = () => {
               />
             </div>
             <div>
-              <h3>Advanced Courses</h3>
+              <Heading level={3}>Advanced Courses</Heading>
               <Course title="Software Engineering" />
               <Course title="Web Systems Programming" />
               <Course title="Database Systems &amp; Apps" />
@@ -67,7 +68,11 @@ const Award: React.FC<AwardProps> = ({ title, link }) => {
     <div className={classes.award}>
       <FontAwesomeIcon icon={faAward} />
       <p>{title}</p>
-      {link && <ExternalLinkIcon href={link} />}
+      {link && (
+        <Link href={link} target="_blank">
+          <ExternalLinkIcon />
+        </Link>
+      )}
     </div>
   );
 };

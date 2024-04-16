@@ -30,6 +30,7 @@ module.exports = {
     'simple-import-sort/exports': 'error',
     'react/prop-types': ['off'],
     'prettier/prettier': 'off',
+    'object-curly-spacing': ['error', 'always'],
   },
   settings: {
     react: {

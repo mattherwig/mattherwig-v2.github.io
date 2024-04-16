@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ContentArea from '../core/ContentArea';
+import Heading from '../core/Heading';
 import Link from '../core/Link';
 
 import classes from './SkillsSection.module.css';
@@ -10,7 +11,7 @@ const SkillsSection = () => {
     <section>
       <ContentArea title="Skills" className={classes.container}>
         <div>
-          <h3>Main Stack</h3>
+          <Heading level={3}>Main Stack</Heading>
           <p>
             I currently have a high emphasis on backend development in a cross-platform (mobile)
             context.

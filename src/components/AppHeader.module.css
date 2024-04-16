@@ -11,6 +11,7 @@
 .firstname {
   font-size: 6rem;
   animation: fadeInSlideLeftAnimation ease 1s;
+  position: sticky;
 }
 
 .lastname {

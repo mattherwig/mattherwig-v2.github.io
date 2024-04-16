@@ -1,7 +1,10 @@
 import React from 'react';
 
 import ContentArea from '../core/ContentArea';
-import ExternalLinkIcon from '../core/ExternalLinkIcon';
+import Heading from '../core/Heading';
+import { ExternalLinkIcon } from '../core/Icon';
+import Link from '../core/Link';
+import { Pill, PillGroup } from '../core/Pill';
 import { PROJECTS } from '../data';
 
 import classes from './ProjectSection.module.css';
@@ -34,15 +37,18 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ title, description, technologies, website }) => {
   return (
     <div className={classes.project}>
-      <div>
-        <div className={classes.header}>
-          <h3>{title}</h3>
-          {website && <ExternalLinkIcon href={website} />}
-        </div>
-        <p>{description}</p>
-        <br />
-        <p>{`Key Technologies: ${technologies.join(', ')}`}</p>
+      <div className={classes.header}>
+        <Heading level={3}>{title}</Heading>
+        {website && (
+          <Link href={website} target="_blank">
+            <ExternalLinkIcon />
+          </Link>
+        )}
       </div>
+      <PillGroup maxWidth={400}>
+        {technologies.map((technology) => <Pill key={technology} text={technology} />)}
+      </PillGroup>
+      <p>{description}</p>
     </div>
   );
 };

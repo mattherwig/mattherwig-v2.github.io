@@ -3,6 +3,7 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSave, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import Heading from '../core/Heading';
 import Link from '../core/Link';
 
 import classes from './AppHeader.module.css';
@@ -10,10 +11,10 @@ import classes from './AppHeader.module.css';
 const AppHeader = () => {
   return (
     <header className={classes.container}>
-      <h1 className={classes.titleContent}>
+      <Heading level={1} className={classes.titleContent}>
         <span className={classes.firstname}>Matt</span>
         <span className={classes.lastname}>Herwig</span>
-      </h1>
+      </Heading>
       <div className={classes.subContent}>
         <div className={classes.subInnerContent}>
           <div className={classes.leftSubContent}>
@@ -34,7 +35,7 @@ const AppHeader = () => {
               <FontAwesomeIcon icon={faLinkedin} size="2xl" />
             </Link>
           </div>
-          <span className={classes.subtitle}>Software Developer</span>
+          <p className={classes.subtitle}>Software Developer</p>
           <div className={classes.rightSubContent}>
             <Link
               href="https://github.com/mattherwig"

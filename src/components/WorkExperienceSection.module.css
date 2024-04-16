@@ -30,6 +30,11 @@
   position: relative;
 }
 
+.timelineEntry[data-is-extra='true'] {
+  height: 0;
+  animation: fadeInAnimation 0.4s ease forwards;
+}
+
 @media screen and (min-width: 600px) {
   .timelineEntry {
     display: grid;
@@ -60,5 +65,28 @@
     left: -20px;
     background: var(--secondary-color);
     border-radius: 8px;
+  }
+}
+/*@keyframes fadeInAnimation {*/
+/*  0% {*/
+/*    filter: blur(0.3rem);*/
+/*    height: 0;*/
+/*  }*/
+/*  100% {*/
+/*    filter: blur(0rem);*/
+/*    height: 200px;*/
+/*    background: yellow;*/
+/*  }*/
+/*}*/
+
+
+@keyframes fadeInAnimation {
+  0% {
+    height: 0;
+    filter: blur(0.3rem);
+  }
+  100% {
+    height: 100%;
+    filter: blur(0rem);
   }
 }

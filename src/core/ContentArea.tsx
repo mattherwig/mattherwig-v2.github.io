@@ -3,6 +3,8 @@ import classNames from 'classnames';
 
 import useOnScreen from '../hooks/useOnScreen';
 
+import Heading from './Heading';
+
 import classes from './ContentArea.module.css';
 
 interface Props extends PropsWithChildren {
@@ -26,7 +28,7 @@ const ContentArea: React.FC<Props> = ({ title, className, children }) => {
       })}
       ref={ref}
     >
-      {title && <div className={classes.title} data-title={title} />}
+      {title && <Heading level={2} className={classes.title} data-title={title} />}
       <div className={className}>{children}</div>
     </div>
   );
