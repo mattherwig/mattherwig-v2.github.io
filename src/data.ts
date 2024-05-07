@@ -20,7 +20,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
     icon: '/images/gusto-black.jpeg',
     positions: [
       {
-        title: 'Staff Full-Stack Engineer',
+        title: 'L4 - Full-Stack Engineer',
         date: 'Jan. 2023 - Present',
         bullets: [
           'Led TurboTax integration generating 200k+ in revenue yearly.',
@@ -28,7 +28,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         ],
       },
       {
-        title: 'Senior Full-Stack Engineer',
+        title: 'L3 - Full-Stack Engineer',
         date: 'July 2022 - Dec. 2022',
         bullets: [
           'Developed a data driven insights engine, working x-functional and with internal stakeholders, supporting feature adoption (ex; budgeting ~750+% increase).',
@@ -37,7 +37,7 @@ export const WORK_EXPERIENCES: WorkExperience[] = [
         ],
       },
       {
-        title: 'Full-Stack Engineer',
+        title: 'L2 - Full-Stack Engineer',
         date: 'July 2021 - June 2022',
         bullets: [
           'Applied first-principals to migrate numerous features from web to mobile. Projects required becoming a SME, re-architecting for cross platform consumption, working in ambiguity and unowned parts of the codebase (ex; employee onboarding).',
